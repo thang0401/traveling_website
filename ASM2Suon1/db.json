@@ -1,0 +1,226 @@
+{
+    "tours":
+    [
+        {
+            "id": 1,
+            "name": "HCM - Hà Nội - Sapa - Lào Cai - Ninh Bình - Hạ Long",
+            "price": "9.290",
+            "image": "1.jpg",
+            "category": "trong nước",
+            "description": "Miền Bắc từ lâu đã là cái nôi của nền văn hóa, lịch sử lâu đời của nước ta, chứa đựng rất nhiều vẻ đẹp độc đáo của tạo hóa. Hoà mình vào nhịp sống bình dị,tận hưởng không gian yên bình",
+            "rate": 5,
+            "amountOfTime" : "5N4Đ"
+        },
+        {
+            "id": 2,
+            "name": "Hồ Chí Minh - Mỹ Tho - Cần Thơ - Miền Tây",
+            "price": "1.620",
+            "image": "2.jpg",
+            "category": "trong nước",
+            "description": "Hoà mình vào nhịp sống bình dị, chan hoà với những người dân miến khách, thật thà, tận hưởng không gian yên bình, thưởng thức những trái cây tươi ngon được tận tay hái tại vườn.",
+            "rate": 5,
+            "amountOfTime" : "2N1Đ"
+        },
+        {
+            "id": 3,
+            "name": "Du Lịch Nha Trang - Mũi Né: Khám phá hòn đảo thiên đường",
+            "price": "6.250",
+            "image": "3.jpg",
+            "category": "trong nước",
+            "description": "không chỉ tham quan, tắm biển mà du khách sẽ còn được tham gia các hoạt động thú vị như đi tàu cao tốc, trải nghiệm các trò chơi cảm giác mạnh, lặn biển ngắm san hô, thưởng thức hải sản tươi ngon.",
+            "rate": 5,
+            "amountOfTime" : "4N3Đ"
+        },
+        {
+            "id": 4,
+            "name": "Đà Nẵng - Sơn Trà - Cù Lao Chàm - Hội An - Bà Nà",
+            "price": "4.400",
+            "image": "4.jpg",
+            "category": "trong nước",
+            "description": "Du khách không chỉ được tham quan những địa điểm nổi tiếng như Phố Cổ Hội An, chùa Linh Ứng, cầu Rồng, các trò chơi biển, vui chơi tại khu giải trí Fantasy Park tại Bà Nà Hills",
+            "rate": 5,
+            "amountOfTime" : "3N2Đ"
+        },
+        {
+            "id": 5,
+            "name": "Khám Phá Đất Nước Chùa Vàng - Thái Lan",
+            "price": "6.790 ",
+            "image": "5.jpg",
+            "category": "nước ngoài",
+            "description": "Hành trình tới Bangkok - Pattaya 5N4Đ với những trải nghiệm, những hoạt động hết sức thú vị và độc đáo, trải nghiệm tham gia các trò chơi biển",
+            "rate": 5,
+            "amountOfTime" : "5N4Đ"
+        },
+        {
+            "id": 6,
+            "name": "Tour Du Lịch Hà Nội - Osaka - Kyoto - Tokyo ",
+            "price": "22.980",
+            "image": "6.jpg",
+            "category": "nước ngoài",
+            "description": "Du khách sẽ được nhìn ngắm ngọn núi Phú Sĩ hùng vĩ, đặc biệt du khách sẽ được mặc lên mình những bộ trang phục truyền thống Kimono vô cùng xinh đẹp.",
+            "rate": 5,
+            "amountOfTime" : "6N5Đ"
+        },
+        {
+            "id": 7,
+            "name": "Úc 2024: Sydney (Một Ngày Tự Do) Từ HCM",
+            "price": "28.990",
+            "image": "7.jpg",
+            "category": "nước ngoài",
+            "description": "Australia – nổi tiếng với hình ảnh quen thuộc của những chú chuột túi, Koala đáng yêu hay nhiều bãi biển xanh mát đem được hòa mình vào thiên nhiên.",
+            "rate": 5,
+            "amountOfTime" : "5N4Đ"
+        },
+        {
+            "id": 8,
+            "name": "Tour Hàn Quốc Cao Cấp: Hà Nội - Seoul - Nami",
+            "price": "14.980",
+            "image": "8.jpg",
+            "category": "nước ngoài",
+            "description": "Chương trình tham quan hấp dẫn với những điểm đến đặc sắc như Đảo Nami, tham gia lớp học làm Kim Chi vui nhộn, Check in cầu khóa tình yêu nổi tiếng trên tháp NamSan,....",
+            "rate": 5,
+            "amountOfTime" : "5N4Đ"
+        },
+        {
+            "id": 9,
+            "name": "Du lịch Sapa giá tốt nhất",
+            "price": "2.290",
+            "image": "9.jpg",
+            "category": "trong nước",
+            "description": "Du lịch Sapa chắc chắn sẽ mang đến cho Quý khách rất nhiều trải nghiêm mới lạ như: săn mây trên đỉnh núi Fansipan, check in sống ảo tại Moana, thưởng thức đặc sản vùng cao..",
+            "rate": 5,
+            "amountOfTime" : "5N4Đ"
+        },
+        {
+            "id": 10,
+            "name": "Đà Lạt - Vẻ Đẹp Xứ Thông Reo",
+            "price": "3.590",
+            "image": "10.jpg",
+            "category": "trong nước",
+            "description": "Những vườn hoa bạt ngàn màu sắc, rặng thông xanh giữa núi đồi bạt ngàn, những dòng thác hùng vĩ,... của thành phố cao nguyên xinh đẹp, trẻ trung này",
+            "rate": 5,
+            "amountOfTime" : "3N2Đ"
+        },
+        {
+            "id": 11,
+            "name": "Tour Sapa Cát Cát - Fansipan",
+            "price": "6.400",
+            "image": "11.jpg",
+            "category": "trong nước",
+            "description": "Săn mây ngắm tuyết tại đỉnh Fansipan hùng vĩ,Thưởng thức ẩm thực vùng cao nguyên hấp dẫn,Tự do tìm hiểu và khám phá văn hóa của đồng bào dân tộc địa phương ",
+            "rate": 5,
+            "amountOfTime" : "2N1Đ"
+        },
+        {
+            "id": 12,
+            "name": "Du lịch Tây Bắc Hà Nội - Mộc Châu - Sơn La - Điện Biên - Sapa",
+            "price": "3.890",
+            "image": "12.jpg",
+            "category": "trong nước",
+            "description": "Thưởng ngoạn vẻ đẹp hùng vĩ của thiên nhiên, núi rừng nơi đây, đồng thời ngắm nhìn vẻ đẹp của những thửa ruộng bậc thang với màu xanh bạt ngàn.",
+            "rate": 5,
+            "amountOfTime" : "2N1Đ"
+        },
+        {
+            "id": 13,
+            "name": "Du Lịch Thái Lan: Hà Nội - Bangkok - Pattaya",
+            "price": "6.990",
+            "image": "13.jpg",
+            "category": "nước ngoài",
+            "description": "Thỏa sức thử thách giới hạn bản thân bằng các trò chơi mạo hiểm dưới nước, ngắm nhìn hàng dừa cong vút tại bãi biển xinh đẹp Pattaya",
+            "rate": 5,
+            "amountOfTime" : "5N4Đ"
+        },
+        {
+            "id": 14,
+            "name": "Tour Singapore - Malaysia - Indonesia",
+            "price": "12.490",
+            "image": "14.jpg",
+            "category": "nước ngoài",
+            "description": "iểu tượng của 3 quốc gia như: Merlion Park (Singapore), tòa tháp đôi Petronas (Malaysia), đảo Batam (Indonesia)... cùng nhiều điểm đến hấp dẫn khác.",
+            "rate": 5,
+            "amountOfTime" : "5N4Đ"
+        },
+        {
+            "id": 15,
+            "name": "Du lịch Canada Liên Tuyến Đông Tây",
+            "price": "119.990",
+            "image": "15.jpg",
+            "category": "nước ngoài",
+            "description": "Tham quan, khám phá các địa danh nổi tiếng như thác nước hùng vĩ Niagara, hòn ngọc Thái Bình Dương Vancouver",
+            "rate": 5,
+            "amountOfTime" : "9N8Đ"
+        },
+        {
+            "id": 16,
+            "name": "Tour Trương Gia Giới - Phù Dung Trấn",
+            "price": "15.980",
+            "image": "16.jpg",
+            "category": "nước ngoài",
+            "description": "",
+            "rate": 5,
+            "amountOfTime" : "5N4Đ"
+        },
+        {
+            "id": 17,
+            "name": "Tour Mộc Châu Khám Phá Cao Nguyên",
+            "price": "1.750",
+            "image": "17.jpg",
+            "category": "trong nước",
+            "description": "khám phá nét đặc sắc trong văn hóa của đồng bào dân tộc Thái, H'Mông, hay thách thức giới hạn bản thân với các trò chơi mạo hiểm.",
+            "rate": 5,
+            "amountOfTime" : "3N2Đ"
+        },
+        {
+            "id": 18,
+            "name": " ",
+            "price": "6.790",
+            "image": "18.jpg",
+            "category": "nước ngoài",
+            "description": " ",
+            "rate": 5,
+            "amountOfTime" : "5N4Đ"
+        },
+        {
+            "id": 19,
+            "name": "Du lịch Hàn Quốc: Hà Nội - Busan - Daegu - Seoul - Nami",
+            "price": "22.980",
+            "image": "19.jpg",
+            "category": "nước ngoài",
+            "description": "Tham quan vô cùng hấp dẫn: chùa cổ Haedong Yonggungsa, Làng văn hóa Gamcheon, đại học Keimyung, China town ",
+            "rate": 5,
+            "amountOfTime" : "6N5Đ"
+        },
+        {
+            "id": 20,
+            "name": "Cao Bằng - Ba Bể - Hà Giang",
+            "price": "8.780",
+            "image": "20.jpg",
+            "category": "trong nước",
+            "description": "khám phá vẻ đẹp vùng đất Hà Giang, Cao Bằng, Bắc Cạn với phong cảnh thiên nhiên trữ tình, thơ mộng. Con người nơi đây cũng vô cùng ôn hòa, chất phác và mến khách.",
+            "rate": 5,
+            "amountOfTime" : "3N2Đ"
+        },
+        {
+            "id": 21,
+            "name": "Bản Cát Cát - Moana - Fansipan",
+            "price": "4.890",
+            "image": "21.jpg",
+            "category": "trong nước",
+            "description": "Nơi đây được mệnh danh là thị trấn sương mù, vùng đất của sự giản dị yên bình nhưng ẩn giấu vô số những cảnh sắc thiên nhiên tuyệt vời.",
+            "rate": 5,
+            "amountOfTime" : "3N2Đ"
+        },
+        {
+            "id": 22,
+            "name": "Tour du lịch Trung Quốc: Hà Nội - Bắc Kinh - Thượng Hải - Hàng Châu - Ô Trấn",
+            "price": "22.780",
+            "image": "22.jpg",
+            "category": "nước ngoài",
+            "description": "Biểu tượng như Vạn Lý Trường Thành hay Tử Cấm Thành, du lịch Trung Quốc vẫn còn vô vàn những thắng cảnh, di tích và điểm tham quan tuyệt vời khác",
+            "rate": 5,
+            "amountOfTime" : "7N6Đ"
+        }
+    ]
+}
+    

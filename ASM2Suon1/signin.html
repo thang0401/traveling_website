@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <style>
+        .error-message {
+            color: red !important;
+            font-size: 12px !important;
+            margin-top: 5px !important;
+            display: block !important;
+            margin-left: 32px;
+        }
+        .form-group {
+            margin-bottom: 20px !important;
+        }
+        .form-control {
+            margin-bottom: 5px !important;
+        }
+        .form-actions {
+            margin-top: 20px !important;
+        }
+        .status-message {
+            margin-top: 20px !important;
+        }
+        .user-social-links ul {
+            padding-left: 0 !important;
+        }
+        .user-social-links li {
+            display: inline-block !important;
+            margin-right: 10px !important;
+        }
+        .form-inline {
+            display: flex !important;
+            align-items: center !important;
+        }
+        .form-inline label {
+            margin-right: 10px !important;
+        }
+        .overlay {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            background: rgba(0,0,0,0.7) !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            z-index: 9999 !important;
+        }
+        .overlay-content {
+            background: #fff !important;
+            padding: 20px !important;
+            border-radius: 5px !important;
+            width: 300px !important;
+        }
+    </style>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+    <div class="inner-body">
+        <div class="Signup_wrapper">
+            <div class="col-md-offset-3 col-md-6 col-md-offset-3">
+                <div class="login-widget">
+                    <div class="sec-img">
+                        <h3 style="color:cadetblue;">Đăng ký thành viên</h3>
+                    </div>
+                    <div class="login-box-v2">
+                        <form name="signupForm" ng-submit="submitForm()" novalidate>
+                            <div class="form-group">
+                                <span><i class="fa fa-user"></i></span> 
+                                <input type="text" class="form-control" placeholder="Tên đăng nhập" name="username" ng-model="formData.username" required>
+                                <span ng-show="signupForm.username.$touched && signupForm.username.$error.required" class="error-message">Tên đăng nhập là bắt buộc</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <span><i class="fa fa-envelope"></i></span> 
+                                <input type="email" class="form-control" placeholder="Email" name="email" ng-model="formData.email" required>
+                                <span ng-show="signupForm.email.$touched && signupForm.email.$error.required" class="error-message">Email là bắt buộc</span>
+                                <span ng-show="signupForm.email.$touched && signupForm.email.$error.email" class="error-message">Email không hợp lệ</span>
+                            </div>
+                            <div class="form-group">
+                                <span><i class="fa fa-unlock"></i></span> 
+                                <input type="password" class="form-control" placeholder="Nhập mật khẩu" name="password" ng-model="formData.password" required>
+                                <span ng-show="signupForm.password.$touched && signupForm.password.$error.required" class="error-message">Mật khẩu là bắt buộc</span>
+                            </div>
+                            <div class="form-group">
+                                <span><i class="fa fa-lock"></i></span> 
+                                <input type="password" class="form-control" placeholder="Xác nhận mật khẩu" name="confirmPassword" ng-model="formData.confirmPassword" required>
+                                <span ng-show="signupForm.confirmPassword.$touched && signupForm.confirmPassword.$error.required" class="error-message">Xác nhận mật khẩu là bắt buộc</span>
+                                <span ng-show="signupForm.confirmPassword.$touched && formData.password !== formData.confirmPassword" class="error-message">Mật khẩu không khớp</span>
+                            </div>
+                            <div class="form-group">
+                                <span><i class="fa fa-venus-mars" aria-hidden="true" style="color: deepskyblue; font-size: 24px;"></i></span>
+                                <label>Giới Tính:</label>
+                                <div class="form-inline">
+                                    <label><input type="radio" name="gender" ng-model="formData.gender" value="NAM" required> Nam</label>
+                                    <label><input type="radio" name="gender" ng-model="formData.gender" value="NU" required> Nữ</label>
+                                </div>
+                                <span ng-show="signupForm.gender.$touched && signupForm.gender.$error.required" class="error-message">Giới tính là bắt buộc</span>
+                            </div>
+                            <div class="form-group">
+                                <span><i class="fa fa-globe" aria-hidden="true" style="color: deepskyblue; font-size: 24px;"></i></span>
+                                <label>Quốc gia</label>
+                                <select style="width: 200px;" name="country" ng-model="formData.country" required>
+                                    <option value="" disabled selected>Chọn quốc gia</option>
+                                    <option value="{{c}}" ng-repeat="c in countries">{{c}}</option>
+                                </select>
+                                <span ng-show="signupForm.country.$touched && signupForm.country.$error.required" class="error-message">Quốc gia là bắt buộc</span>
+                            </div>
+                            <div class="row">
+                                <div class="user-social-links">
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item ms-3"><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="list-inline-item ms-3"><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="list-inline-item ms-3"><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                        <li class="list-inline-item ms-3"><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-actions clearfix">
+                                <div class="remember-me pull-left">
+                                    <input type="checkbox" name="agree" ng-model="formData.agree" required> <span>Đồng ý với điều kiện chính sách</span>
+                                    <span ng-show="signupForm.agree.$touched && signupForm.agree.$error.required" class="error-message">Bạn phải đồng ý với điều kiện chính sách</span>
+                                </div>
+                                <div class="submit-form pull-right">
+                                    <button type="submit" class="submit-btn" ng-disabled="signupForm.$invalid">Đăng ký</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="statusMessage" class="status-message" ng-show="statusMessage" ng-class="statusClass">{{statusMessage}}</div>
+                        <div class="login-footer text-center">
+                            <a href="../../html/pages/forget-passward.html">Quên mật khẩu ?</a>
+                        </div>
+                        <div class="register">
+                            <p>Bạn đã có tài khoản <a href="login.html">log In</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay for displaying form data -->
+    <div class="overlay" ng-show="showOverlay">
+        <div class="overlay-content">
+            <h3>ĐĂNG KÝ THÀNH CÔNG</h3>
+            <p><strong>Tên đăng nhập:</strong> {{formData.username}}</p>
+            <p><strong>Email:</strong> {{formData.email}}</p>
+            <p><strong>Giới tính:</strong> {{formData.gender}}</p>
+            <p><strong>Quốc gia:</strong> {{formData.country}}</p>
+            <button ng-click="closeOverlay()">Đóng</button>
+        </div>
+    </div>
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myController', function($scope,$http) {
+            $scope.formData = {};
+            $scope.countries = ["Vietnam", "USA", "Canada", "Japan", "China"];
+
+            $scope.submitForm = function() {
+                $scope.signupForm.$setSubmitted();
+                if ($scope.signupForm.$valid) {
+                    // Show the overlay with form data
+                    $scope.showOverlay = true;
+                    $scope.statusMessage = "Đăng ký thành công!";
+                    $scope.statusClass = "alert-success";
+                } else {
+                    $scope.statusMessage = "Vui lòng điền đầy đủ thông tin.";
+                    $scope.statusClass = "alert-danger";
+                }
+            };
+            var url = 'http://localhost:3001/user', data = 'parameters',config='contenttype';
+            $http.post(url, JSON.stringify( $scope.formData)).then(function (response) {
+            // This function handles success
+            }, function (response) {
+            // this function handles error
+            });
+
+            $scope.closeOverlay = function() {
+                $scope.showOverlay = false;
+            };
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!-- trang giỏ hàng -->
+<h1>GIỎ HÀNG CỦA BẠN</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in cart">
+                        <td>{{$index + 1}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.price}}.000 VND</td>
+                        <td>
+                            <button class="btn btn-primary" ng-click="minus(item)">-</button>
+                            {{item.quantity}}
+                            <button class="btn btn-primary" ng-click="plus(item)">+</button>
+                        </td>
+                        <td>{{ calculatePrice( item.price , tours.quantity) }}.000 VND</td>
+                        <td>
+                            <button class="btn btn-danger" ng-click="remove(item)">Xóa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Tổng tiền : {{total()}}.000 VND</h2>
+        </div>
+    </div>
+</div>

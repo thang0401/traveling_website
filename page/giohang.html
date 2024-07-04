@@ -1,0 +1,37 @@
+<!-- trang giỏ hàng -->
+<h1>Đây là trang giỏ hàng</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in cart">
+                        <td>{{$index + 1}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.price}}</td>
+                        <td>
+                            <button class="btn btn-primary" ng-click="minus(item)">-</button>
+                            {{item.quantity}}
+                            <button class="btn btn-primary" ng-click="plus(item)">+</button>
+                        </td>
+                        <td>{{item.price * item.quantity}}</td>
+                        <td>
+                            <button class="btn btn-danger" ng-click="remove(item)">Xóa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Tổng tiền : {{total()}}</h2>
+        </div>
+    </div>
+</div>

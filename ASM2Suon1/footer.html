@@ -1,0 +1,84 @@
+        <!--footer start here-->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="inner-footer">
+                            <!-- <a href="../../index.html"><img src="" alt="logo" class="img-fluid"></a> -->
+                           
+                            <br>
+                            <p>Thông tin về công ty</p>
+                            <p class="footer-text"><span><a href="#"><i class="fa fa-phone"></i></a></span> Gọi ngay:
+                                0335874542</p>
+                            <p class="footer-text"><span><a href="#"><i class="fa fa-envelope"></i></a></span> Email:
+                                thangnc0401@gmail.com</p>
+                            <p class="footer-text"><span><a href="#"><i class="fa fa-map-marker"></i></a></span>Địa
+                                chỉ:Toà T, Công viên phần mềm quang trung, quận 12, tp HCM</p>
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#"> <span class="social-icon"><i class="fa fa-facebook-f"></i></span></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"> <span class="social-icon"><i class="fa fa-twitter"></i></span></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"> <span class="social-icon"><i class="fa fa-futbol-o"></i></span></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"> <span class="social-icon"><i
+                                                class="fa fa-google-plus-official"></i></span></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#"> <span class="social-icon"><i class="fa fa-linkedin"></i></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 col-sm-4 ">
+                        <div class="list-of-nav">
+                            <div class="inner-footer1 ms-6">
+                                <ul class="list-unstyled">
+                                    <li><a href="../../index.html"><i class="fa fa-hand-o-right"></i> Trang chủ </a>
+                                    </li>
+                                    <li><a href="../../html/pages/about_us.html"><i class="fa fa-hand-o-right"></i> Về
+                                            chúng tôi</a></li>
+                                    <li><a href="../../html/pages/contact_us.html"><i class="fa fa-hand-o-right"></i>
+                                            Liên hệ ngay</a></li>
+                                    <li><a href="../../html/pages/log_in.html"><i class="fa fa-hand-o-right"></i>Đăng
+                                            nhập</a></li>
+                                    <li><a href="../../html/pages/sign_up.html"><i class="fa fa-hand-o-right"></i>Đăng
+                                            ký</a></li>
+                                    <li><a href="../../html/pages/coming_soon.html"><i class="fa fa-hand-o-right"></i>
+                                            Coming Soon</a></li>
+                                    <li><a href="../../html/pages/FAQ.html"><i class="fa fa-hand-o-right"></i>Câu hỏi
+                                            thường gặp</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
+<script>
+    const btnMenu = document.querySelector('.btn-menu');
+    const menuMobile = document.querySelector('.nav-moble');
+
+    let isMenuVisible = false;
+
+    btnMenu.addEventListener('click', () => {
+        if (!isMenuVisible) {
+            menuMobile.style.display = "block";
+            isMenuVisible = true;
+        } else {
+            menuMobile.style.display = "none";
+            isMenuVisible = false;
+        }
+    });
+</script>
